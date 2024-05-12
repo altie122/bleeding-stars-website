@@ -7,6 +7,9 @@ import solidJs from "@astrojs/solid-js";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
-  integrations: [tailwind(), sitemap(), db(), solidJs()]
+  site: 'https://bleedingstars.dovahkiin.xyz',
+  integrations: [tailwind(), 
+    sitemap({
+      filter: (page) => page !== 'https://bleedingstars.dovahkiin.xyz/sandbox/',
+    }), db(), solidJs()]
 });

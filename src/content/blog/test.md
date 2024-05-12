@@ -1,7 +1,7 @@
 ---
 title: Testing of this amazing blog | TEMP
 description: Testing blog stuff
-publishDate: 5-11-2024
+publishDate: 2024-05-11T20:00:00.000Z
 authors:
   - altie122
   - tangle

@@ -16,5 +16,3 @@ collections:
     - {label: "Authors", name: "authors", widget: "list"}
     - {label: "Draft", name: "isDraft", widget: "boolean", default: true}
     - {label: "Body", name: "body", widget: "markdown"}
-
-previewStyles: 'src/styles/tailwind.css'
