@@ -1,7 +1,6 @@
 ---
 name: Tangle
 role:
-  - Admin
   - Editor
   - Voice Actor
   - Writer

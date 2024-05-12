@@ -35,7 +35,7 @@ const placeholderGradient = randomFromArray(gradients);
 
 <Layout
 	title={data.name}
-	description={data.description}
+	description={post.body}
 >
 <div
 	class:list={[
@@ -49,15 +49,15 @@ const placeholderGradient = randomFromArray(gradients);
 			class="mx-auto w-fit max-w-full dark:bg-slate-900 bg-slate-400 py-8 md:px-10 md:py-12 lg:p-12 lg:py-16 xl:p-16 xl:py-20 px-1"
 		>
 			<header class="mx-auto w-full max-w-prose text-center">
-				<h1 class="heading-3 mb-4 mt-2 md:heading-2 sm:mb-5 sm:mt-3">{data.title}</h1>
+				<h1 class="heading-3 mb-4 mt-2 md:heading-2 sm:mb-5 sm:mt-3">{data.name}</h1>
 				<div
 					class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-astro-gray-200 md:gap-y-4"
 				>
 					<div class="flex items-center gap-2">
 						<Avatar name={post.slug} xl />
-						<span>{data.name}</span>
 					</div>
 				</div>
+				<h3>Role(s): {data.role.map(role => String(role)).join(", ")}</h3>
 			</header>
 			<hr class="md:-mx-10 lg:-mx-12 xl:-mx-16 my-8 lg:my-16" />
 			<article class="prose">

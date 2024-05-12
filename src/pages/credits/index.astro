@@ -1,27 +1,26 @@
 ---
 import { getCollection } from 'astro:content';
+import Avatar from '~/components/avatar.astro';
 import Layout from '~/layouts/Layout.astro';
 
-export async function getStaticPaths() {
-  let people = await getCollection("authors");
-  people = people.sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
-  const uniqueTags = [...new Set(people.map((post) => post.data.tags).flat())];
-
-  return uniqueTags.map((tag) => {
-    const filteredPosts = people.filter((post) =>
-      post.data.tags.includes(tag)
-    );
-    return {
-      params: { tag },
-      props: { posts: filteredPosts },
-    };
-  });
-}
-
+let team = await getCollection("authors");
 ---
 
 <Layout title="Credits" description='placeholder!'>
-	<main>
-		
+	<main class="p-5">
+		<h1>The Team:</h1>
+		<ul class="grid grid-cols-3 list-none gap-4 py-5 flex-wrap">
+			{
+				team.map((member) => (
+					<li>
+						<div class="flex items-center gap-2">
+							<Avatar name={member.slug} xl />
+							<span><a href={'credits/' + member.slug} class="text-inherit">{member.data.name}</a><br/>Role(s): {member.data.role.map(role => String(role)).join(", ")}</span>
+						</div>
+					</li>
+				))
+			}
+		</ul>
+		<p>If you are a part of the Team and would like a Name or Profile Picture changed, please ping <span class="bg-black/50 px-2 rounded-lg">@altie122</span> in <span class="bg-black/50 px-2 rounded-lg">#bleeding-stars-website</span>.</p>
 	</main>
 </Layout>
