@@ -1,4 +1,4 @@
-local_backend: true
+# local_backend: true
 backend:
   name: git-gateway
 media_folder: "/public/content/"
@@ -6,7 +6,7 @@ public_folder: '/content/'
 collections:
 - name: blog
   label: "Blog"
-  folder: /src/content/blog
+  folder: src/content/blog
   preview_path: blog/{{slug}}
   create: true
   fields:
@@ -18,7 +18,7 @@ collections:
     - {label: "Body", name: "body", widget: "markdown"}
 - name: updates
   label: "Updates"
-  folder: /src/content/updates
+  folder: src/content/updates
   preview_path: updates/{{slug}}
   create: true
   fields:
@@ -30,7 +30,7 @@ collections:
     - {label: "Body", name: "body", widget: "markdown"}
 - name: authors
   label: "Authors"
-  folder: /src/content/authors
+  folder: src/content/authors
   create: true
   identifier_field: name
   editor:
