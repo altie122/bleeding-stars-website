@@ -1,11 +1,11 @@
 ---
-title: Testing of this amazing blog | TEMP
-description: Testing blog stuff
+title: Testing of this amazing Blog | TEMP
+description: Testing Blog stuff
 publishDate: 2024-05-11T20:00:00.000Z
 authors:
   - altie122
   - tangle
-  - lolbit
+  - lolbit-the-fox
 isDraft: false
 ---
 This blogpost is Temporary, Please ignore!

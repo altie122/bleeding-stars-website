@@ -1,6 +1,6 @@
 ---
-name: Tangle
+name: Lolbit the Fox
 role:
-  - Admin
+  - Owner
 pfp: /src/content/authors/_images/default.png
 ---

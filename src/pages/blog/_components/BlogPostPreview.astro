@@ -3,6 +3,7 @@ import { format } from "date-fns";
 import { resolveCoverImage } from "~/content/blog/_resolveImages.js";
 
 export type Props = {
+	isUpdate: boolean;
 	post: {
 		slug: string;
 		data: {
@@ -14,7 +15,7 @@ export type Props = {
 	};
 };
 
-const { post } = Astro.props;
+const { isUpdate, post } = Astro.props;
 
 const image = await resolveCoverImage(post);
 ---
@@ -23,7 +24,7 @@ const image = await resolveCoverImage(post);
 	class="border dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 border-slate-200 bg-slate-300 text-slate-800 p-4 outline-astro-pink-light transition-transform duration-300 ease-out focus-within:outline hover:scale-[1.03]"
 >
 	<a
-		href={`/blog/${post.slug}/`}
+		href={isUpdate ? `/updates/${post.slug}/` : `/blog/${post.slug}/`}
 		data-astro-prefetch
 		class="block outline-none"
 	>

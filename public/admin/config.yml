@@ -1,4 +1,4 @@
-# local_backend: true
+local_backend: true
 backend:
   name: git-gateway
 media_folder: "/public/content/"
@@ -16,3 +16,28 @@ collections:
     - {label: "Authors", name: "authors", widget: "list"}
     - {label: "Draft", name: "isDraft", widget: "boolean", default: true}
     - {label: "Body", name: "body", widget: "markdown"}
+- name: updates
+  label: "Updates"
+  folder: src/content/updates
+  preview_path: updates/{{slug}}
+  create: true
+  fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Description", name: "description", widget: "string"}
+    - {label: "Publish Date", name: "publishDate", widget: "datetime"}
+    - {label: "Authors", name: "authors", widget: "list"}
+    - {label: "Draft", name: "isDraft", widget: "boolean", default: true}
+    - {label: "Body", name: "body", widget: "markdown"}
+- name: authors
+  label: "Authors"
+  folder: src/content/authors
+  create: true
+  identifier_field: name
+  editor:
+    preview: false
+  fields:
+    - {label: "Name", name: "name", widget: "string"}
+    - {label: "Role(s)", name: "role", widget: "list"}
+    - {label: "Voiced", name: "voiced", widget: "list", required: false}
+    - {label: "PFP", name: "pfp", widget: "image", choose_url: true, default: "/src/content/authors/_images/default.png", media_folder: "/src/content/authors/_images/"}
+    - {label: "About", name: "body", widget: "markdown", required: false}
