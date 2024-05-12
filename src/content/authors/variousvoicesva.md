@@ -1,8 +1,6 @@
 ---
-name: Lolbit the Fox
+name: VariousVoicesVA
 role:
-  - Owner
-  - Writer
-  - Animator
+  - Voice Actor
 pfp: /src/content/authors/_images/default.png
 ---

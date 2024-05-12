@@ -1,8 +1,7 @@
 ---
-name: Lolbit the Fox
+name: Kail
 role:
-  - Owner
-  - Writer
-  - Animator
+  - Voice Actor
+voiced: []
 pfp: /src/content/authors/_images/default.png
 ---

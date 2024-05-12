@@ -1,8 +1,7 @@
 ---
-name: Lolbit the Fox
+name: Meggy146
 role:
-  - Owner
-  - Writer
+  - Artist
   - Animator
 pfp: /src/content/authors/_images/default.png
 ---

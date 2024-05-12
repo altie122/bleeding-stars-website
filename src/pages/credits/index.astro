@@ -1,9 +1,27 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from '~/layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  let people = await getCollection("authors");
+  people = people.sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
+  const uniqueTags = [...new Set(people.map((post) => post.data.tags).flat())];
+
+  return uniqueTags.map((tag) => {
+    const filteredPosts = people.filter((post) =>
+      post.data.tags.includes(tag)
+    );
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  });
+}
+
 ---
 
 <Layout title="Credits" description='placeholder!'>
 	<main>
-		Credits go here
+		
 	</main>
 </Layout>

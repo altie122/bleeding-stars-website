@@ -5,6 +5,6 @@ role:
   - Web Developer
 pfp: /src/content/authors/_images/altie122.png
 ---
-# Hello :D
-I'm Alite, an Editor and only Web Developer for Bleeding Stars!
+# Hallo :D
+I'm Alite, an Editor and only Web Developer for the Bleeding Stars project!
 

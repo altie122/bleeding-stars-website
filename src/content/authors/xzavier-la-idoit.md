@@ -1,8 +1,6 @@
 ---
-name: Lolbit the Fox
+name: xzavier la idoit
 role:
-  - Owner
-  - Writer
-  - Animator
+  - Score Composer
 pfp: /src/content/authors/_images/default.png
 ---

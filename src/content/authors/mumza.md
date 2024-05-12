@@ -1,8 +1,7 @@
 ---
-name: Lolbit the Fox
+name: Mumza
 role:
-  - Owner
-  - Writer
   - Animator
+  - Voice Actor
 pfp: /src/content/authors/_images/default.png
 ---

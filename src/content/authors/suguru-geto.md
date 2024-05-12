@@ -1,8 +1,8 @@
 ---
-name: Lolbit the Fox
+name: suguru geto
 role:
-  - Owner
-  - Writer
-  - Animator
+  - Artist
+  - Voice Actor
+  - Editor
 pfp: /src/content/authors/_images/default.png
 ---

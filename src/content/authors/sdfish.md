@@ -1,8 +1,6 @@
 ---
-name: Lolbit the Fox
+name: sdfish
 role:
-  - Owner
   - Writer
-  - Animator
 pfp: /src/content/authors/_images/default.png
 ---

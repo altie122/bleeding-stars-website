@@ -1,8 +1,6 @@
 ---
-name: Lolbit the Fox
+name: NY
 role:
-  - Owner
-  - Writer
   - Animator
 pfp: /src/content/authors/_images/default.png
 ---

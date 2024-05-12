@@ -1,9 +1,9 @@
-# local_backend: true
+local_backend: true
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
-media_folder: "/public/content/"
-public_folder: '/content/'
+  branch: main
+media_folder: "/public/assets/"
+public_folder: '/assets/'
 collections:
 - name: blog
   label: "Blog"
@@ -29,8 +29,8 @@ collections:
     - {label: "Authors", name: "authors", widget: "list"}
     - {label: "Draft", name: "isDraft", widget: "boolean", default: true}
     - {label: "Body", name: "body", widget: "markdown"}
-- name: authors
-  label: "Authors"
+- name: team
+  label: "Team"
   folder: src/content/authors
   create: true
   identifier_field: name
@@ -40,5 +40,5 @@ collections:
     - {label: "Name", name: "name", widget: "string"}
     - {label: "Role(s)", name: "role", widget: "list"}
     - {label: "Voiced", name: "voiced", widget: "list", required: false}
-    - {label: "PFP", name: "pfp", widget: "image", choose_url: true, default: "/src/content/authors/_images/default.png", media_folder: "/src/content/authors/_images/"}
+    - {label: "PFP", name: "pfp", widget: "image", choose_url: false, default: "/src/content/authors/_images/default.png", media_folder: "/src/content/authors/_images/"}
     - {label: "About", name: "body", widget: "markdown", required: false}

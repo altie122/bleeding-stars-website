@@ -1,8 +1,6 @@
 ---
-name: Lolbit the Fox
+name: Cherry_Victory
 role:
-  - Owner
   - Writer
-  - Animator
 pfp: /src/content/authors/_images/default.png
 ---

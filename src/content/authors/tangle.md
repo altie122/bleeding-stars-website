@@ -2,5 +2,9 @@
 name: Tangle
 role:
   - Admin
-pfp: /src/content/authors/_images/tangle.png
+  - Editor
+  - Voice Actor
+  - Writer
+  - Animator
+pfp: /src/content/authors/_images/default.png
 ---

@@ -1,8 +1,7 @@
 ---
-name: Lolbit the Fox
+name: Cactus King
 role:
-  - Owner
   - Writer
-  - Animator
+  - Editor
 pfp: /src/content/authors/_images/default.png
 ---

@@ -6,9 +6,10 @@ type Props = {
 	name?: string;
 	image?: string;
 	lg?: boolean;
+	xl?: boolean;
 };
 
-let { name, image, lg = false } = Astro.props;
+let { name, image, lg = false, xl = false } = Astro.props;
 
 if (!image && name) {
 	const author = await getEntry("authors", name);
@@ -21,7 +22,7 @@ if (!image && name) {
 		<img
 			class:list={[
 				"my-0 inline-block rounded-full border dark:border-slate-800 border-slate-300",
-				lg ? "h-6 w-6 md:h-10 md:w-10" : "h-6 w-6",
+				lg ? "h-6 w-6 md:h-10 md:w-10" : xl ? "h-6 w-6 md:h-14 md:w-14" : "h-6 w-6",
 			]}
 			src={image}
 			alt=""

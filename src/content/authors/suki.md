@@ -1,8 +1,6 @@
 ---
-name: Lolbit the Fox
+name: suki
 role:
-  - Owner
-  - Writer
-  - Animator
+  - Unknown
 pfp: /src/content/authors/_images/default.png
 ---
