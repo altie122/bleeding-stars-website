@@ -15,20 +15,21 @@ if (title == "N/A") {
 }
 
 
+import "~/styles/tailwind.css";
 import Head from '../components/head.astro';
 import Header from '../components/header.astro';
 import Footer from '../components/footer.astro';
 ---
 
 <!doctype html>
-<html lang="en" class=" bg-slate-900 text-slate-400">
+<html lang="en" class="">
 	<head>
 		<Head title={Title} description={description} banner="/banner.jpg" icon="/icon.png"/>
 		<ViewTransitions />
 	</head>
 	<body>
 		<Header />
-		<div class=" container mx-auto min-h-screen">
+		<div class="min-h-screen">
 			<slot />
 		</div>
 		<Footer />

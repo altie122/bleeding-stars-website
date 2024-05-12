@@ -1,0 +1,119 @@
+/* All comments were gotten from https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer */
+/* reset rules or default styles applied to plain HTML elements. */
+@layer base {
+  /* root colors */
+  :root {
+    @apply dark:bg-slate-900 dark:text-slate-400 bg-slate-400 text-slate-900;
+  }
+  h1 {
+    @apply text-2xl sm:text-3xl lg:text-4xl dark:text-slate-300 text-slate-800;
+  }
+  h2 {
+    @apply text-xl sm:text-2xl lg:text-3xl dark:text-slate-300 text-slate-800;
+  }
+  h3 {
+    @apply text-lg sm:text-xl lg:text-2xl dark:text-slate-300 text-slate-800;
+  }
+  h4 {
+    @apply text-base dark:text-slate-300 text-slate-800;
+  }
+  h5 {
+    @apply text-sm dark:text-slate-300 text-slate-800;
+  }
+  h6 {
+    @apply text-xs dark:text-slate-300 text-slate-800;
+  }
+  p {
+    @apply text-base;
+  }
+  a {
+    @apply text-sky-500 underline hover:decoration-dashed;
+  }
+  a.external {
+    @apply after:content-['_↗'];
+  }
+  ul {
+    @apply list-disc list-inside;
+  }
+  ol {
+    @apply list-decimal list-inside;
+  }
+  img {
+    @apply w-1/4;
+  }
+  hr {
+    @apply dark:border-slate-700 border-slate-200;
+  }
+  blockquote {
+    @apply border-l pl-4 dark:border-slate-700 border-slate-200;
+  }
+  figcaption {
+    color: inherit;
+    opacity: 50%;
+  }
+  video {
+    @apply w-1/4;
+  }
+  audio {
+    @apply w-1/4;
+  }
+  iframe {
+    @apply w-1/4;
+  }
+  input {
+    @apply dark:bg-slate-800 dark:text-slate-300 bg-slate-300 text-slate-800 border dark:border-slate-700 border-slate-200;
+  }
+  textarea {
+    @apply dark:bg-slate-800 dark:text-slate-300 bg-slate-300 text-slate-800 border dark:border-slate-700 border-slate-200;
+  }
+  table {
+    @apply dark:bg-slate-800 dark:text-slate-300 bg-slate-300 text-slate-800 border dark:border-slate-700 border-slate-200;
+  }
+  th {
+    @apply dark:bg-slate-800 dark:text-slate-300 bg-slate-300 text-slate-800 border dark:border-slate-700 border-slate-200;
+  }
+  td {
+    @apply dark:bg-slate-800 dark:text-slate-300 bg-slate-300 text-slate-800 border dark:border-slate-700 border-slate-200;
+  }
+  dd {
+    @apply pl-4;
+  }
+  select {
+    @apply dark:bg-slate-800 dark:text-slate-300 bg-slate-300 text-slate-800 border dark:border-slate-700 border-slate-200;
+  }
+  button {
+    @apply dark:bg-slate-800 dark:text-slate-300 bg-slate-300 text-slate-800 border dark:border-slate-700 border-slate-200 rounded-lg p-1;
+  }
+  dialog {
+    @apply dark:bg-slate-800 dark:text-slate-300 bg-slate-300 text-slate-800 border dark:border-slate-700 border-slate-200 rounded-lg p-1;
+  }
+}
+/* class-based styles that you want to be able to override with utilities. */
+@layer components {
+  .banner {
+    @apply w-full text-center min-h-16 justify-center flex-col flex
+  }
+}
+/* small, single-purpose classes that should always take precedence over any other styles. */
+@layer utilities {
+  /* navbar colors and styles */
+  .navbar {
+    @apply drop-shadow-2xl dark:bg-slate-800 dark:text-slate-300 bg-slate-300 text-slate-800;
+    a {
+      @apply text-inherit no-underline hover:underline decoration-solid;
+    }
+    a.external {
+      @apply after:content-['_↗'];
+    }
+  }
+  /* footer colors and styles */
+  .footer {
+    @apply items-center py-4 px-5 dark:bg-slate-800 dark:text-slate-300 bg-slate-300 text-slate-800;
+    a {
+      @apply text-inherit no-underline hover:underline decoration-solid;
+    }
+    a.external {
+      @apply after:content-['_↗'];
+    }
+  }
+}
