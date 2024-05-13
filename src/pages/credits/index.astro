@@ -15,7 +15,7 @@ let team = await getCollection("authors");
 					<li>
 						<div class="flex items-center gap-2">
 							<Avatar name={member.slug} xl />
-							<span><a href={'credits/' + member.slug} class="text-inherit">{member.data.name}</a><br/>Role(s): {member.data.role.map(role => String(role)).join(", ")}</span>
+							<span><a href={'/credits/' + member.slug} class="text-inherit">{member.data.name}</a><br/>Role(s): {member.data.role.map(role => String(role)).join(", ")}</span>
 						</div>
 					</li>
 				))
