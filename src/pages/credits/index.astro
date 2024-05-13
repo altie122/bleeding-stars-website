@@ -9,7 +9,7 @@ let team = await getCollection("authors");
 <Layout title="Credits" description='placeholder!'>
 	<main class="p-5">
 		<h1>The Team:</h1>
-		<ul class="grid grid-cols-3 list-none gap-4 py-5 flex-wrap">
+		<ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 list-none gap-4 py-5 flex-wrap">
 			{
 				team.map((member) => (
 					<li>
