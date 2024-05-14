@@ -3,7 +3,7 @@
   to = "/admin/:splat"
   force = true
   status = 200
-  conditions = {Role = ["editor", "admin", "dev"]}
+  conditions = {Role = ["Author", "Admin", "Dev"]}
 
 # In this example, visitors whose JWT tokens include the `admin`,
 # `editor`, or `dev` role can access the `/admin` path.
