@@ -2,8 +2,8 @@
 import { type CollectionEntry, getCollection, getEntry } from "astro:content";
 import { format } from "date-fns";
 import Avatar from "~/components/avatar.astro";
-import { resolveCoverImage, resolveSocialImage } from "~/content/updates/_resolveImages.ts";
-import { randomFromArray } from "~/helpers/random.ts";
+import { resolveCoverImage, resolveSocialImage } from "~/content/updates/_resolveImages.js";
+import { randomFromArray } from "~/helpers/random.js";
 import Layout from "~/layouts/Layout.astro";
 
 export type Props = {

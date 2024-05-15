@@ -10,12 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.6.0",
-    "@astrojs/db": "^0.11.1",
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/db": "^0.11.2",
     "@astrojs/sitemap": "^3.1.4",
     "@astrojs/solid-js": "^4.2.0",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.8.2",
+    "astro": "^4.8.4",
     "daisyui": "^4.10.5",
     "date-fns": "^3.6.0",
     "solid-js": "^1.8.17",
