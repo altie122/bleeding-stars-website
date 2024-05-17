@@ -3,3 +3,4 @@ Allow: /
 Disallow: /admin/
 
 Sitemap: https://bleedingstars.dovahkiin.xyz/sitemap-index.xml
+Sitemap: https://bleedingstars.dovahkiin.xyz/sitemap-0.xml
