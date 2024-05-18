@@ -4,14 +4,14 @@
 Website for [Lolbit The Fox](https://www.youtube.com/@Lolbit_The_Fox)'s Bleeding Stars Website
 
 Todo list:
--[X] Get site hosted
--[ ] Landing
--[X] Credits page (still waiting for list of people)
--[X] Blog page
--[X] Updates page
--[X] Set up Decap CMS (Content Management System)
+- [X] Get site hosted
+- [ ] Landing
+- [X] Credits page (still waiting for list of people)
+- [X] Blog page
+- [X] Updates page
+- [X] Set up Decap CMS (Content Management System)
 
 Waiting on:
--[ ] Credits
--[ ] Colors
--[ ] favicon and banner
+- [X] Credits
+- [ ] Colors
+- [ ] favicon and banner
