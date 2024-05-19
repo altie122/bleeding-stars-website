@@ -10,6 +10,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
+import { pages } from "~/lib/consts";
 
 export function NavDrawer() {
   return (
@@ -23,8 +24,11 @@ export function NavDrawer() {
             <DrawerTitle>Navigation</DrawerTitle>
           </DrawerHeader>
           <div className="p-4 pb-0 flex flex-wrap gap-2">
-          <a href="/blog/"><Button variant={'outline'}>Blog</Button></a>
-          <a href="/credits/"><Button variant={'outline'}>Credits</Button></a>
+            {
+			      	pages.map((data) => (
+                <a href={data.href}><Button variant={'outline'}>{data.name}</Button></a>
+			      	))
+			      }
           </div>
           <DrawerFooter>
             <DrawerClose asChild>

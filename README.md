@@ -10,6 +10,7 @@ Todo list:
 - [X] Blog page
 - [X] Updates page
 - [X] Set up Decap CMS (Content Management System)
+- [ ] Set up comments on Blog and Update posts
 
 Waiting on:
 - [X] Credits

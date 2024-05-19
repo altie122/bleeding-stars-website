@@ -1,0 +1,19 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import { Button } from '~/components/ui/button';
+import { pages } from '~/lib/consts'
+---
+
+<Layout title='404' description='error 404 D:'>
+	<main class="flex text-center flex-col">
+		<p class="h404">404</p>
+    Page not found
+    <div class=" flex flex-row flex-wrap place-content-center gap-5 pt-5">
+      {
+				pages.map((data) => (
+          <a href={data.href}><Button variant={'outline'}>{data.name}</Button></a>
+				))
+			}
+    </div>
+	</main>
+</Layout>

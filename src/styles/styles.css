@@ -1,7 +1,9 @@
 /* All comments were gotten from https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer */
 /* reset rules or default styles applied to plain HTML elements. */
 @layer base {
-
+  .h404 {
+    @apply text-[10vw] text-secondary-foreground p-[5vw];
+  }
   h1 {
     @apply text-2xl sm:text-3xl lg:text-4xl text-secondary-foreground;
   }
