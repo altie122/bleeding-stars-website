@@ -1,6 +1,7 @@
-import type { JSX } from "solid-js/jsx-runtime";
-export default function RightArrowIcon(props: JSX.SvgSVGAttributes<SVGSVGElement>) {
-	return (
+import React from 'react';
+
+const RightArrowIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
+  return (
 		<svg
 			width="24"
 			height="24"
@@ -16,3 +17,5 @@ export default function RightArrowIcon(props: JSX.SvgSVGAttributes<SVGSVGElement
 		</svg>
 	);
 }
+
+export default RightArrowIcon;

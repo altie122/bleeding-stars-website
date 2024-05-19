@@ -11,6 +11,7 @@ const domain = String(Astro.site)
 const banner_formatted = banner.startsWith('/') ? banner.slice(1) : banner;
 const page = new URL(Astro.url.pathname, Astro.site);
 import { ViewTransitions } from 'astro:transitions';
+import "~/styles/tailwind.css";
 ---
 <!-- DO NOT ADD THE HEAD TAG -->
 <!-- sitemap, favicon, title, and metadata -->

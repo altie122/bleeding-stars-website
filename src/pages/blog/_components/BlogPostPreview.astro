@@ -21,7 +21,7 @@ const image = await resolveCoverImage(post);
 ---
 
 <article
-	class="border dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 border-slate-200 bg-slate-300 text-slate-800 p-4 outline-astro-pink-light transition-transform duration-300 ease-out focus-within:outline hover:scale-[1.03]"
+	class="border bg-secondary p-4 transition-transform duration-300 ease-out focus-within:outline hover:scale-[1.03] rounded-lg"
 >
 	<a
 		href={isUpdate ? `/updates/${post.slug}/` : `/blog/${post.slug}/`}
@@ -29,7 +29,7 @@ const image = await resolveCoverImage(post);
 		class="block outline-none"
 	>
 		<header>
-			<time class="code text-astro-gray-200" datetime={post.data.publishDate.toISOString()}>
+			<time class="code" datetime={post.data.publishDate.toISOString()}>
 				{format(post.data.publishDate, "MMMM d, yyyy")}
 			</time>
 		</header>
