@@ -19,4 +19,4 @@ go to: `/sandbox` to see were I did all of the styling.
 
 Pronouns: He/Him but I don't honestly care
 
-I like coding, I have a small YouTube channel, I play way to much Call Of Duty and Skyrim, I am also currently trying to get into cosplay as well!
+I like coding, I have a small YouTube channel, and I play way to much Call of Duty (and Skyrim :P)!
