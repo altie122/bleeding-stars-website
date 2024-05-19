@@ -14,7 +14,7 @@ export type Props = {
 
 const { user } = Astro.props;
 ---
-<div class="flex items-center gap-2 bg-secondary text-secondary-foreground rounded-xl p-1">
+<a href={'/credits/' + user.slug} class="flex items-center gap-2 bg-secondary text-secondary-foreground rounded-xl p-1">
 	<Avatar name={user.slug} xl />
-	<span><a href={'/credits/' + user.slug} class="text-inherit">{user.data.name}</a><br/>Role(s): {user.data.role.map(role => String(role)).join(", ")}</span>
-</div>
+	<span>{user.data.name}<br/>Role(s): {user.data.role.map(role => String(role)).join(", ")}</span>
+</a>

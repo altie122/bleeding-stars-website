@@ -27,7 +27,7 @@ const { Content } = await render();
 const coverImage = await resolveCoverImage(post);
 // const socialImage = await resolveSocialImage(post);
 
-const authors = await Promise.all(data.authors.map((author) => getEntry("authors", author))).then(
+const authors = await Promise.all(data.authors.map((author: any) => getEntry("authors", author))).then(
 	(authors) => authors.filter(Boolean) as CollectionEntry<"authors">[],
 );
 
@@ -68,7 +68,7 @@ const placeholderGradient = randomFromArray(gradients);
 		)
 	}
 
-	<div class="grid-container relative mx-auto max-w-screen-lg md:z-10">
+	<div class="grid-container relative mx-auto max-w-screen-lg md:z-10 prose">
 		<div
 			class="mx-auto w-fit max-w-full bg-background py-8 md:px-10 md:py-12 lg:p-12 lg:py-16 xl:p-16 xl:py-20 px-1"
 		>

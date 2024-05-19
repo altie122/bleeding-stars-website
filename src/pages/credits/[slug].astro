@@ -43,7 +43,7 @@ const placeholderGradient = randomFromArray(gradients);
 	]}
 />
 
-	<div class="grid-container relative mx-auto max-w-screen-lg md:z-10">
+	<div class="grid-container relative mx-auto max-w-screen-lg md:z-10 prose">
 		<div
 			class="mx-auto w-fit max-w-full bg-background py-8 md:px-10 md:py-12 lg:p-12 lg:py-16 xl:p-16 xl:py-20 px-1"
 		>
@@ -56,15 +56,15 @@ const placeholderGradient = randomFromArray(gradients);
 						<Avatar name={post.slug} xl />
 					</div>
 				</div>
-				<h3>Role(s): {data.role.map(role => String(role)).join(", ")}</h3>
+				<h3>Role(s): {data.role.map((role: any) => String(role)).join(", ")}</h3>
 				{data.voiced && (
-					<h3>Voiced Role(s): {data.voiced.map(voices => String(voices)).join(", ")}</h3>
+					<h3>Voiced Role(s): {data.voiced.map((voices: any) => String(voices)).join(", ")}</h3>
 				)}
 			</header>
 			<hr class="md:-mx-10 lg:-mx-12 xl:-mx-16 my-8 lg:my-16" />
 			<h1>About {data.name}:</h1>
 			<hr />
-			<article class="prose">
+			<article class="">
 				<Content />
 			</article>
 		</div>
