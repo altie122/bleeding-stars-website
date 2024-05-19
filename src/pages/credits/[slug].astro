@@ -57,6 +57,9 @@ const placeholderGradient = randomFromArray(gradients);
 					</div>
 				</div>
 				<h3>Role(s): {data.role.map(role => String(role)).join(", ")}</h3>
+				{data.voiced && (
+					<h3>Voiced Role(s): {data.voiced.map(voices => String(voices)).join(", ")}</h3>
+				)}
 			</header>
 			<hr class="md:-mx-10 lg:-mx-12 xl:-mx-16 my-8 lg:my-16" />
 			<h1>About {data.name}:</h1>

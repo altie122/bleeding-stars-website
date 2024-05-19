@@ -3,9 +3,6 @@ name: Altie122
 role:
   - Editor
   - Web Developer
-  - Voice Actor
-voiced:
-  - Test
 pfp: /src/content/authors/_images/altie122.png
 ---
 ## Hallo :D

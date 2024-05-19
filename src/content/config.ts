@@ -32,6 +32,7 @@ const authors = defineCollection({
   schema: z.object({
     name: z.string(),
     role: z.array(z.string()),
+    voiced: z.array(z.string()).optional(),
     pfp: z.string().default("/src/content/authors/_images/default.png"),
   })
 });
