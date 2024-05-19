@@ -1,9 +1,13 @@
 ---
+import YouTubeEmbed from '~/components/YouTubeEmbed.astro';
 import Layout from '~/layouts/Layout.astro';
+
+
 ---
 
 <Layout description='placeholder!'>
-	<main>
+	<main class="prose">
+    <YouTubeEmbed url="https://www.youtube.com/watch?v=87TdQAGmeOA" allowFullScreen/>
     <h1>This page is only for development, Please ignore! - &lt;h1&gt;</h1>
     <h2>This page is only for development, Please ignore! - &lt;h2&gt;</h2>
     <h3>This page is only for development, Please ignore! - &lt;h3&gt;</h3>
@@ -111,7 +115,7 @@ import Layout from '~/layouts/Layout.astro';
         Your browser does not support the audio tag.
     </audio>
     
-    <iframe src="https://www.youtube-nocookie.com/embed/ypQODyy9Fno" frameborder="0" allowfullscreen />
+    <iframe src="https://www.youtube-nocookie.com/embed/87TdQAGmeOA" frameborder="0" allowfullscreen />
     
     <iframe src="https://bleedingstars.dovahkiin.xyz" frameborder="0">This page is only for development, Please ignore! - &lt;iframe&gt;</iframe>
     
@@ -183,6 +187,9 @@ import Layout from '~/layouts/Layout.astro';
     <output>This page is only for development, Please ignore! - &lt;output&gt;</output>
     
     <iframe src="https://bleedingstars.dovahkiin.xyz" sandbox="">
-		<div class="banner">This page is only for development, Please ignore! - &lt;div class="banner"&gt;</div>
+	<div class="banner">This page is only for development, Please ignore! - &lt;div class="banner"&gt;</div>
+
+    <br />
+
 	</main>
 </Layout>
