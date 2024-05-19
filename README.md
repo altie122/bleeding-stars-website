@@ -6,12 +6,12 @@ Website for [Lolbit The Fox](https://www.youtube.com/@Lolbit_The_Fox)'s Bleeding
 Todo list:
 - [X] Get site hosted
 - [ ] Landing
-- [X] Credits page (still waiting for list of people)
+- [X] Credits page (still waiting for list of people's roles)
 - [X] Blog page
 - [X] Updates page
 - [X] Set up Decap CMS (Content Management System)
 
 Waiting on:
 - [X] Credits
-- [ ] Colors
-- [ ] favicon and banner
+- [X] favicon
+- [ ] banner
