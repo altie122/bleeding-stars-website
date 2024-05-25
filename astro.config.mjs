@@ -5,6 +5,8 @@ import db from "@astrojs/db";
 import react from "@astrojs/react";
 import mdx from "@astrojs/mdx";
 
+import webVitals from "@astrojs/web-vitals";
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://bleedingstars.dovahkiin.xyz',
@@ -12,5 +14,5 @@ export default defineConfig({
     applyBaseStyles: false
   }), sitemap({
     filter: page => page !== 'https://bleedingstars.dovahkiin.xyz/sandbox/'
-  }), db(), react(), mdx()]
+  }), db(), react(), mdx(), webVitals()]
 });
