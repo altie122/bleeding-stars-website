@@ -16,6 +16,6 @@ export default defineConfig({
   }), sitemap({
     filter: page => page !== 'https://bleedingstars.dovahkiin.xyz/sandbox/'
   }), db(), react(), mdx(), webVitals()],
-  output: "server",
+  output: "hybrid",
   adapter: netlify()
 });
