@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 export function DiscordButton() {
   return(
-    <a href="https://discord.gg/UmNRqRUpRe"><Button variant={'outline'} size="icon"><TablerBrandDiscord /></Button></a>
+    <a href="https://discord.gg/AnFrEBnJWC"><Button variant={'outline'} size="icon"><TablerBrandDiscord /></Button></a>
   )
 }
 
