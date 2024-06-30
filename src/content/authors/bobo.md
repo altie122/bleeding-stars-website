@@ -1,5 +1,5 @@
 ---
-name: Bobo
+name: Bobo 🪿
 role:
   - Voice Actor
 voiced: []
