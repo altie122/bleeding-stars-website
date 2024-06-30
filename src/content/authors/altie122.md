@@ -11,7 +11,7 @@ I'm Altie, an Editor and only Web Developer for the Bleeding Stars project!
 
 Want to see a hidden page?
 
-go to: `/sandbox` to see were I did all of the styling.
+go to: `/sandbox` to see were I tested all of the styling.
 
 - - -
 
