@@ -1,83 +1,83 @@
 /* All comments were gotten from https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer */
 /* reset rules or default styles applied to plain HTML elements. */
 @layer base {
-  .prose h1 {
+  .prose h1, .prose-h1 {
     @apply text-2xl sm:text-3xl lg:text-4xl text-secondary-foreground;
   }
-  .prose h2 {
+  .prose h2, .prose-h2 {
     @apply text-xl sm:text-2xl lg:text-3xl text-secondary-foreground;
   }
-  .prose h3 {
+  .prose h3, .prose-h3 {
     @apply text-lg sm:text-xl lg:text-2xl text-secondary-foreground;
   }
-  .prose h4 {
+  .prose h4, .prose-h4 {
     @apply text-base text-secondary-foreground;
   }
-  .prose h5 {
+  .prose h5, .prose-h5 {
     @apply text-sm text-secondary-foreground;
   }
-  .prose h6 {
+  .prose h6, .prose-h6 {
     @apply text-xs text-secondary-foreground;
   }
-  .prose p {
+  .prose p, .prose-p {
     @apply text-base;
   }
-  .prose a {
+  .prose a, .prose-a {
     @apply text-sky-500 underline hover:decoration-dashed;
   }
-  .prose a.external {
+  .prose a.external, .prose-a.external {
     @apply after:content-['_↗'];
   }
-  .prose ul {
+  .prose ul, .prose-ul {
     @apply list-disc list-inside;
   }
-  .prose ol {
+  .prose ol, .prose-ol {
     @apply list-decimal list-inside;
   }
-  .prose hr {
+  .prose hr, .prose-hr {
     @apply  text-secondary-foreground;
   }
-  .prose blockquote {
+  .prose blockquote, .prose-blockquote {
     @apply border-l pl-4 dark:border-slate-700 border-slate-200;
   }
-  .prose figcaption {
+  .prose figcaption, .prose-figcaption {
     color: inherit;
     opacity: 50%;
   }
-  .prose video {
+  .prose video, .prose-video {
     @apply w-1/4;
   }
-  .prose audio {
+  .prose audio, .prose-audio {
     @apply w-1/4;
   }
-  .prose iframe {
+  .prose iframe, .prose-iframe {
     @apply w-1/4;
   }
-  .prose input {
+  .prose input, .prose-input {
     @apply dark:bg-slate-800 dark:text-slate-300 bg-slate-300 text-slate-800 border dark:border-slate-700 border-slate-200;
   }
-  .prose textarea {
+  .prose textarea, .prose-textarea {
     @apply dark:bg-slate-800 dark:text-slate-300 bg-slate-300 text-slate-800 border dark:border-slate-700 border-slate-200;
   }
-  .prose table {
+  .prose table, .prose-table {
     @apply dark:bg-slate-800 dark:text-slate-300 bg-slate-300 text-slate-800 border dark:border-slate-700 border-slate-200;
   }
-  .prose th {
+  .prose th, .prose-th {
     @apply dark:bg-slate-800 dark:text-slate-300 bg-slate-300 text-slate-800 border dark:border-slate-700 border-slate-200;
   }
-  .prose td {
+  .prose td, .prose-td {
     @apply dark:bg-slate-800 dark:text-slate-300 bg-slate-300 text-slate-800 border dark:border-slate-700 border-slate-200;
   }
-  .prose dd {
+  .prose dd, .prose-dd {
     @apply pl-4;
   }
-  .prose select {
+  .prose select, .prose-select {
     @apply dark:bg-slate-800 dark:text-slate-300 bg-slate-300 text-slate-800 border dark:border-slate-700 border-slate-200;
   }
-  .prose button {
+  .prose button, .prose-button {
     @apply dark:bg-slate-800 dark:text-slate-300 bg-slate-300 text-slate-800 border dark:border-slate-700 border-slate-200 rounded-lg p-1;
   }
-  .prose dialog {
+  .prose dialog, .prose-dialog {
     @apply dark:bg-slate-800 dark:text-slate-300 bg-slate-300 text-slate-800 border dark:border-slate-700 border-slate-200 rounded-lg p-1;
   }
 }

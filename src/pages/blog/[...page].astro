@@ -14,12 +14,16 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   // return import.meta.env.PROD ? data.isDraft !== true : true;
   return data.isDraft !== true;
 	}))];
+	console.log(posts);
+	if (posts) {
+		const sortedPosts = posts.sort(
+			(a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime(),
+		);
 
-	const sortedPosts = posts.sort(
-		(a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime(),
-	);
-
-	return paginate(sortedPosts, { pageSize: 5 });
+		return paginate(sortedPosts, { pageSize: 5 });
+	} else {
+		return paginate([], { pageSize: 5 });
+	}
 }
 
 const { page } = Astro.props as {
@@ -30,7 +34,7 @@ const allPages = [...Array(page.lastPage).keys()].map((num) => {
 	return `/blog${num === 0 ? "" : `/${String(num + 1)}`}`;
 });
 
-const allPosts = await getCollection("blog");
+// const allPosts = await getCollection("blog"); // unused
 
 ---
 
@@ -44,11 +48,11 @@ const allPosts = await getCollection("blog");
     <div class="flex flex-col items-center gap-20 py-8 lg:p-12 xl:p-20">
 			<ul class="flex max-w-screen-md flex-col gap-y-4 md:gap-y-6 lg:gap-y-8 list-none">
 				{
-					page.data.map((post) => (
+					page.data.length > 0 ? (page.data.map((post) => (
 						<li>
 							<BlogPostPreview post={post} isUpdate={"isUpdate" in post.data} />
 						</li>
-					))
+					))) : (<h2 class="prose-h2">There are no posts</h2>)
 				}
 			</ul>
 
