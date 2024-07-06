@@ -2,6 +2,9 @@
 name: ♠Spades♠
 role:
   - Voice Actor
+voiced:
+  - nobe
+  - stitchwraith
 pfp: /src/content/authors/_images/captura_de_pantalla_2024-06-17_171447.jpg
 ---
 Hello my new friends I am spades I am the voice actor for nobe and stitchwraith and I am very glad to be able to entertain yall 
