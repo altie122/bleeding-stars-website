@@ -52,6 +52,8 @@ export const paginate = <T>({
 				current: pageNumToUrl(pageNum),
 				next: pageNum === lastPage ? undefined : pageNumToUrl(pageNum + 1),
 				prev: pageNum === 1 ? undefined : pageNumToUrl(pageNum - 1),
+				first: pageNum === 1 ? undefined : pageNumToUrl(1),
+				last: pageNum === lastPage ? undefined : pageNumToUrl(lastPage),
 			},
 		};
 	});
