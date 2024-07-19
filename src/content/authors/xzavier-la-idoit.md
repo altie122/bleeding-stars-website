@@ -1,9 +1,11 @@
 ---
 name: xzavier la idoit
+username: xidiott
 role:
   - Score Composer
   - Voice Actor
 pfp: /src/content/authors/_images/untitled39_20240517220249.png
+isArchived: false
 ---
 Hi I’m Xzavier…. I’m the score composer:D 
 

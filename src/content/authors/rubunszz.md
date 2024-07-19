@@ -1,6 +1,8 @@
 ---
 name: Rubunszz
+username: rubunszz
 role:
-  - Writers
+  - Writer
 pfp: /src/content/authors/_images/default.png
+isArchived: false
 ---

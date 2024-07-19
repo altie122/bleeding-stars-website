@@ -26,7 +26,7 @@ export function NavDrawer() {
           <div className="p-4 pb-0 flex flex-wrap gap-2">
             {
 			      	pages.map((data) => (
-                <a href={data.href} key={data.href}><Button variant={'outline'}>{data.name}</Button></a>
+                data.isExternal ? <a href={data.href} key={data.href}><Button variant={'outline'}><span className="after:content-['_↗']">{data.name}</span></Button></a> : <a href={data.href} key={data.href}><Button variant={'outline'}>{data.name}</Button></a>
 			      	))
 			      }
           </div>

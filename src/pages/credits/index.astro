@@ -4,6 +4,9 @@ import Layout from '~/layouts/Layout.astro';
 import UserCard from './_components/UserCard.astro';
 
 let team = await getCollection("authors");
+
+const activeTeam = team.filter((member) => !member.data.isArchived);
+const archivedTeam = team.filter((member) => member.data.isArchived);
 ---
 
 <Layout title="Credits" description='placeholder!'>
@@ -11,12 +14,23 @@ let team = await getCollection("authors");
 		<h1>The Team:</h1>
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 list-none gap-4 py-5 flex-wrap">
 			{
-				team.map((member) => (
+				activeTeam.map((member) => (
 					<UserCard user={member}/>
 				))
 			}
 		</div>
-		<p>Totaling {team.length} amazing Team Members!</p>
+		<p>Totaling {activeTeam.length} amazing Team Members!</p>
 		<p>If you are a part of the Team and would like a Name or Profile Picture changed, please ping <span class=" bg-secondary text-secondary-forground px-2 rounded-lg">@altie122</span> in <span class=" bg-secondary text-secondary-forground px-2 rounded-lg">#bleeding-stars-website</span>.</p>
+		<h1>Past Team Members:</h1>
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 list-none gap-4 py-5 flex-wrap">
+			{
+				archivedTeam.map((member) => (
+					<UserCard user={member}/>
+				))
+			}
+		</div>
+		<p>Totaling {archivedTeam.length} past Team Members</p>
+		<br class="border-secondary" />
+		<p>Total team members current and past: {team.length}</p>
 	</main>
 </Layout>

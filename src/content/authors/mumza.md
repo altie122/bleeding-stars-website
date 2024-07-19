@@ -1,7 +1,9 @@
 ---
-name: Mumza
+name: 𐙚┆Tighnari ★ ₊ ˚⟡ {🦢}
+username: mumza_
 role:
-  - Animator
   - Voice Actor
+  - Animator
 pfp: /src/content/authors/_images/default.png
+isArchived: false
 ---

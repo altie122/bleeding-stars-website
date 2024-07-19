@@ -1,8 +1,9 @@
 ---
-name: suguru geto
+name: 邪悪な者😈
+username: uknowitsweedy
 role:
-  - Artist
+  - Script Writer
   - Voice Actor
-  - Editor
 pfp: /src/content/authors/_images/default.png
+isArchived: false
 ---

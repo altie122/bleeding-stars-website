@@ -1,7 +1,8 @@
 ---
 name: Milkro
+username: mikro666
 role:
   - Voice Actor
-voiced: []
 pfp: /src/content/authors/_images/default.png
+isArchived: false
 ---

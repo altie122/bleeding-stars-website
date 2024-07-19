@@ -31,9 +31,11 @@ const updates = defineCollection({
 const authors = defineCollection({
   schema: z.object({
     name: z.string(),
+    username: z.string(),
     role: z.array(z.string()),
     voiced: z.array(z.string()).optional(),
     pfp: z.string().default("/src/content/authors/_images/default.png"),
+    isArchived: z.boolean(), // This is to archive team members who no longer work on the project
   })
 });
 

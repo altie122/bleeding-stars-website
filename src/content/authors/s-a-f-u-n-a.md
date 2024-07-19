@@ -1,7 +1,8 @@
 ---
 name: S.A.F.U.N.A
+username: skittlesfox
 role:
   - Voice Actor
-voiced: []
 pfp: /src/content/authors/_images/default.png
+isArchived: false
 ---

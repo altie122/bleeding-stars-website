@@ -1,9 +1,11 @@
 ---
 name: Altie122
+username: altie122
 role:
   - Editor
   - Web Developer
 pfp: /src/content/authors/_images/altie122.png
+isArchived: false
 ---
 ## Hallo :D
 

@@ -1,7 +1,8 @@
 ---
 name: KENNY
+username: k3_nnedy
 role:
   - Voice Actor
-voiced: []
 pfp: /src/content/authors/_images/default.png
+isArchived: false
 ---
