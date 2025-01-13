@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
 
-Sitemap: https://bleedingstars.dovahkiin.xyz/sitemap-index.xml
+Sitemap: https://bleedingstars.url122.xyz/sitemap-index.xml

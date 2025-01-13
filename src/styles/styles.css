@@ -1,4 +1,4 @@
-/* All comments were gotten from https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer */
+/* All comments were sourced from https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer */
 /* reset rules or default styles applied to plain HTML elements. */
 @layer base {
   .prose h1, .prose-h1 {

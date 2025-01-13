@@ -10,11 +10,11 @@ import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://bleedingstars.dovahkiin.xyz',
+  site: 'https://bleedingstars.url122.xyz',
   integrations: [tailwind({
     applyBaseStyles: false
   }), sitemap({
-    filter: page => page !== 'https://bleedingstars.dovahkiin.xyz/sandbox/'
+    filter: page => page !== 'https://bleedingstars.url122.xyz/sandbox/'
   }), db(), react(), mdx(), webVitals()],
   output: "hybrid",
   adapter: netlify()
