@@ -28,6 +28,24 @@ const updates = defineCollection({
     .transform((study) => ({ ...study, isUpdate: true })),
 });
 
+const meetingarchive = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    publishDate: z.date(),
+    authors: z.array(z.string()),
+    footnote: z.string().optional(),
+    isDraft: z.boolean(),
+    socialImage: z.string().optional(),
+    coverImage: z.string().optional(),
+    videoURLs: z.object({
+      youtube: z.string().optional(),
+      uploadthing: z.string(),
+    }),
+    important: z.boolean().optional(),
+  }),
+});
+
 const authors = defineCollection({
   schema: z.object({
     name: z.string(),
@@ -43,4 +61,5 @@ export const collections = {
   blog, 
   authors, 
   updates,
+  meetingarchive,
 };

@@ -7,7 +7,7 @@ interface Props {
 
 const { url, classes = "", allowFullScreen = false } = Astro.props;
 
-const yt_to_yt_nocookie = await fetch(`https://yt-to-ytnocookie.dovahkiin.xyz/api/yttoytnocookie?url=${url}`)
+const yt_to_yt_nocookie = await fetch(`https://yt-to-ytnocookie.xyz/api/yttoytnocookie?url=${url}`)
 const data = await yt_to_yt_nocookie.json();
 const video = data.URL;
 ---
