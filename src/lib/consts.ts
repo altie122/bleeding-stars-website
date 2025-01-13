@@ -10,6 +10,11 @@ export const pages = [ // All STATIC pages, dynamic pages like plog/update posts
     isExternal: false,
   },
   {
+    name: 'Meetings',
+    href: '/meetings/',
+    isExternal: false,
+  },
+  {
     name: 'Credits',
     href: '/credits/',
     isExternal: false,
