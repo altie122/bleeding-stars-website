@@ -8,12 +8,12 @@ interface Props {
 
 export default function MeetingsTabs({ uploadthing, Youtube }: Props) {
   const [tab, setTab] = useState(
-    sessionStorage.getItem("video-tab")
-      ? JSON.parse(sessionStorage.getItem("video-tabs")!)
+    localStorage.getItem("video-tab")
+      ? JSON.parse(localStorage.getItem("video-tabs")!)
       : "uploadthing"
   );
   useEffect(() => {
-    sessionStorage.setItem(
+    localStorage.setItem(
       "video-tabs",
       JSON.stringify(tab)
     );
